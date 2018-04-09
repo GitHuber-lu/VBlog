@@ -1,0 +1,12 @@
+[2018-04-09T11:14:22.755] [INFO] console - GET /login
+[2018-04-09T11:15:09.963] [INFO] console - GET /login?username=admin?password=%22123456%22
+[2018-04-09T11:15:26.874] [INFO] console - GET /login/?username=admin?password=%22123456%22
+[2018-04-09T11:15:30.216] [INFO] console - GET /login?username=admin?password=%22123456%22
+[2018-04-09T11:16:44.124] [INFO] console - GET /login?username=admin?password=%22123456%22
+[2018-04-09T13:21:04.246] [INFO] console - GET /login?username=admin?password=%22123456%22
+[2018-04-09T13:21:36.510] [INFO] console - GET /login?username=admin&password=%22123456%22
+[2018-04-09T13:24:16.627] [INFO] console - GET /login?username=admin&password=%22123456%22
+[2018-04-09T13:24:48.394] [INFO] console - GET /login?username=admin&password=%22123456%22
+[2018-04-09T13:43:00.874] [INFO] console - GET /login?username=admin&password=%22123456%22
+[2018-04-09T13:43:02.442] [INFO] console - GET /login?username=admin&password=%22123456%22
+[2018-04-09T13:43:31.046] [INFO] console - GET /login?username=admin&password=%22123456%22
