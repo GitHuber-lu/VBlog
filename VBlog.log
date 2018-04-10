@@ -1,12 +1,57 @@
-[2018-04-09T11:14:22.755] [INFO] console - GET /login
-[2018-04-09T11:15:09.963] [INFO] console - GET /login?username=admin?password=%22123456%22
-[2018-04-09T11:15:26.874] [INFO] console - GET /login/?username=admin?password=%22123456%22
-[2018-04-09T11:15:30.216] [INFO] console - GET /login?username=admin?password=%22123456%22
-[2018-04-09T11:16:44.124] [INFO] console - GET /login?username=admin?password=%22123456%22
-[2018-04-09T13:21:04.246] [INFO] console - GET /login?username=admin?password=%22123456%22
-[2018-04-09T13:21:36.510] [INFO] console - GET /login?username=admin&password=%22123456%22
-[2018-04-09T13:24:16.627] [INFO] console - GET /login?username=admin&password=%22123456%22
-[2018-04-09T13:24:48.394] [INFO] console - GET /login?username=admin&password=%22123456%22
-[2018-04-09T13:43:00.874] [INFO] console - GET /login?username=admin&password=%22123456%22
-[2018-04-09T13:43:02.442] [INFO] console - GET /login?username=admin&password=%22123456%22
-[2018-04-09T13:43:31.046] [INFO] console - GET /login?username=admin&password=%22123456%22
+[2018-04-10T09:54:48.408] [INFO] console - GET /login
+[2018-04-10T10:00:04.947] [INFO] console - GET /login
+[2018-04-10T10:22:21.980] [INFO] console - GET /login
+[2018-04-10T10:26:09.258] [INFO] console - GET /login
+[2018-04-10T10:52:41.871] [INFO] console - GET /login
+[2018-04-10T10:53:18.767] [INFO] console - GET /login?username=&password=
+[2018-04-10T10:54:00.704] [INFO] console - GET /login?username=sdfsdf&password=sdfsdfsd
+[2018-04-10T10:54:19.808] [INFO] console - GET /login?username=admin&password=admin
+[2018-04-10T10:54:25.597] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-10T10:54:27.951] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-10T11:03:14.143] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-10T11:04:07.732] [INFO] console - GET /login?username=&password=
+[2018-04-10T11:06:22.178] [INFO] console - OPTIONS /login
+[2018-04-10T11:07:23.852] [INFO] console - OPTIONS /login
+[2018-04-10T11:08:54.351] [INFO] console - GET /login?username=admin&password=admin
+[2018-04-10T11:10:07.453] [INFO] console - GET /login?username=admin&password=admin
+[2018-04-10T11:12:01.892] [INFO] console - GET /login?username=admin&password=admin
+[2018-04-10T11:13:04.537] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-10T13:43:27.653] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-10T13:44:08.417] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-10T14:56:11.103] [INFO] console - GET /insert
+[2018-04-10T14:56:11.168] [INFO] console - GET /favicon.ico
+[2018-04-10T14:56:32.351] [INFO] console - GET /insert
+[2018-04-10T14:56:34.115] [INFO] console - GET /insert
+[2018-04-10T14:57:31.457] [ERROR] console - insert user failed.MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc60500c796343f00d6832'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
+[2018-04-10T14:59:34.067] [ERROR] console - insert user failed.MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc60cb8a5e6a2454299991'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
+[2018-04-10T15:00:24.123] [ERROR] console - insert user failed.MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc61088a6e4116c417f18c'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
+[2018-04-10T15:00:24.131] [INFO] console - GET /insert
+[2018-04-10T15:01:20.611] [ERROR] console - insert user failed. MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc61405f885640dc3cac39'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
+[2018-04-10T15:01:20.618] [INFO] console - GET /insert
+[2018-04-10T15:01:30.375] [ERROR] console - insert user failed. MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc614a5f885640dc3cac3a'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
+[2018-04-10T15:01:30.376] [INFO] console - GET /insert
+[2018-04-10T15:02:27.163] [ERROR] console - { MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc6183d4e516205439cfaa'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
+    at C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:595:61
+    at authenticateStragglers (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:513:16)
+    at Connection.messageHandler (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:549:5)
+    at emitMessageHandler (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\connection.js:309:10)
+    at Socket.<anonymous> (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\connection.js:452:17)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    at Socket.Readable.push (_stream_readable.js:211:10)
+    at TCP.onread (net.js:585:20)
+  name: 'MongoError',
+  message: 'not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId(\'5acc6183d4e516205439cfaa\'), username: "admin", password: "123456", __v: 0 } ], ordered: false }',
+  ok: 0,
+  errmsg: 'not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId(\'5acc6183d4e516205439cfaa\'), username: "admin", password: "123456", __v: 0 } ], ordered: false }',
+  code: 13,
+  codeName: 'Unauthorized' }
+[2018-04-10T15:02:27.174] [INFO] console - GET /insert
+[2018-04-10T15:14:22.312] [INFO] console - GET /insert
+[2018-04-10T15:25:47.582] [INFO] console - GET /insert
+[2018-04-10T15:25:51.581] [INFO] console - GET /insert
+[2018-04-10T15:25:54.343] [INFO] console - GET /insert
+[2018-04-10T16:03:20.708] [INFO] console - GET /insert
+[2018-04-10T16:06:19.515] [INFO] console - GET /insert
