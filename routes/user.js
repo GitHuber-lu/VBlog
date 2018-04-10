@@ -23,8 +23,19 @@ router.get('/insert', function (req, res, next) {
 router.get('/login', function (req, res, next) {
   const username = req.query.username;
   const password = req.query.password;
-  
-  res.send(username + ':' + password);
+  User.findOne({ username: username }, function (err, doc) {
+    if (err) {
+      logger.error(err);
+      res.json({ code: 500, data: null, message: 'query user failed.' });
+      return;
+    }
+    if (doc && doc.password === password) {
+      return res.json({ code: 200, data: null, message: 'user authentication success.' });
+    } else {
+      return res.json({ code: 500, data: null, message: 'user authentication failed.' });
+    }
+  })
+
 });
 
 module.exports = router;
