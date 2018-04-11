@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('nevmblog:server');
+var debug = require('debug')('vblog:server');
 var http = require('http');
 
 /**

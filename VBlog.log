@@ -1,104 +1,18 @@
-[2018-04-10T09:54:48.408] [INFO] console - GET /login
-[2018-04-10T10:00:04.947] [INFO] console - GET /login
-[2018-04-10T10:22:21.980] [INFO] console - GET /login
-[2018-04-10T10:26:09.258] [INFO] console - GET /login
-[2018-04-10T10:52:41.871] [INFO] console - GET /login
-[2018-04-10T10:53:18.767] [INFO] console - GET /login?username=&password=
-[2018-04-10T10:54:00.704] [INFO] console - GET /login?username=sdfsdf&password=sdfsdfsd
-[2018-04-10T10:54:19.808] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T10:54:25.597] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T10:54:27.951] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T11:03:14.143] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T11:04:07.732] [INFO] console - GET /login?username=&password=
-[2018-04-10T11:06:22.178] [INFO] console - OPTIONS /login
-[2018-04-10T11:07:23.852] [INFO] console - OPTIONS /login
-[2018-04-10T11:08:54.351] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T11:10:07.453] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T11:12:01.892] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T11:13:04.537] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T13:43:27.653] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T13:44:08.417] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T14:56:11.103] [INFO] console - GET /insert
-[2018-04-10T14:56:11.168] [INFO] console - GET /favicon.ico
-[2018-04-10T14:56:32.351] [INFO] console - GET /insert
-[2018-04-10T14:56:34.115] [INFO] console - GET /insert
-[2018-04-10T14:57:31.457] [ERROR] console - insert user failed.MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc60500c796343f00d6832'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
-[2018-04-10T14:59:34.067] [ERROR] console - insert user failed.MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc60cb8a5e6a2454299991'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
-[2018-04-10T15:00:24.123] [ERROR] console - insert user failed.MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc61088a6e4116c417f18c'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
-[2018-04-10T15:00:24.131] [INFO] console - GET /insert
-[2018-04-10T15:01:20.611] [ERROR] console - insert user failed. MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc61405f885640dc3cac39'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
-[2018-04-10T15:01:20.618] [INFO] console - GET /insert
-[2018-04-10T15:01:30.375] [ERROR] console - insert user failed. MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc614a5f885640dc3cac3a'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
-[2018-04-10T15:01:30.376] [INFO] console - GET /insert
-[2018-04-10T15:02:27.163] [ERROR] console - { MongoError: not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId('5acc6183d4e516205439cfaa'), username: "admin", password: "123456", __v: 0 } ], ordered: false }
-    at C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:595:61
-    at authenticateStragglers (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:513:16)
-    at Connection.messageHandler (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:549:5)
-    at emitMessageHandler (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\connection.js:309:10)
-    at Socket.<anonymous> (C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\connection.js:452:17)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    at Socket.Readable.push (_stream_readable.js:211:10)
-    at TCP.onread (net.js:585:20)
-  name: 'MongoError',
-  message: 'not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId(\'5acc6183d4e516205439cfaa\'), username: "admin", password: "123456", __v: 0 } ], ordered: false }',
-  ok: 0,
-  errmsg: 'not authorized on vblog to execute command { insert: "users", documents: [ { _id: ObjectId(\'5acc6183d4e516205439cfaa\'), username: "admin", password: "123456", __v: 0 } ], ordered: false }',
-  code: 13,
-  codeName: 'Unauthorized' }
-[2018-04-10T15:02:27.174] [INFO] console - GET /insert
-[2018-04-10T15:14:22.312] [INFO] console - GET /insert
-[2018-04-10T15:25:47.582] [INFO] console - GET /insert
-[2018-04-10T15:25:51.581] [INFO] console - GET /insert
-[2018-04-10T15:25:54.343] [INFO] console - GET /insert
-[2018-04-10T16:03:20.708] [INFO] console - GET /insert
-[2018-04-10T16:06:19.515] [INFO] console - GET /insert
-[2018-04-10T18:58:34.786] [INFO] console - GET /
-[2018-04-10T18:58:34.856] [INFO] console - GET /favicon.ico
-[2018-04-10T18:58:41.477] [INFO] console - GET /login
-[2018-04-10T18:59:03.802] [INFO] console - GET /login?username=&password=
-[2018-04-10T19:36:10.695] [INFO] console - GET /insert
-[2018-04-10T21:21:31.604] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T21:22:17.414] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:22:49.438] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:28:09.141] [INFO] console - GET /login?username=yami&password=123456
-[2018-04-10T21:28:43.133] [INFO] console - GET /login?username=yami&password=123456
-[2018-04-10T21:29:07.812] [INFO] console - GET /login?username=yami&password=123456
-[2018-04-10T21:29:18.394] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:37:40.895] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T21:37:48.847] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:41:53.502] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:42:25.788] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T21:42:33.929] [INFO] console - GET /login?username=admin1&password=admin
-[2018-04-10T21:44:34.128] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:44:48.594] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:44:58.960] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T21:45:02.488] [INFO] console - GET /login?username=231232&password=admin
-[2018-04-10T21:45:13.865] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T21:45:23.577] [INFO] console - GET /login?username=admin&password=hgjghjghjghj
-[2018-04-10T21:45:30.097] [INFO] console - GET /login?username=admin&password=345345345345345
-[2018-04-10T21:54:10.925] [INFO] console - GET /login?username=admin&password=admin
-[2018-04-10T21:54:22.769] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T21:57:09.076] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T22:03:59.320] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T22:07:34.641] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T22:08:13.378] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T22:11:59.965] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T22:12:06.700] [INFO] console - GET /login?username=admin&password=111
-[2018-04-10T22:14:22.459] [INFO] console - GET /login?username=admin&password=sdfsd
-[2018-04-10T22:18:32.773] [INFO] console - GET /login?username=admin&password=123456
-[2018-04-10T22:18:40.271] [INFO] console - GET /login?username=amidfsdfsd&password=dsfdsf
-[2018-04-10T22:25:57.704] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:05.303] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:06.181] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:06.392] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:06.549] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:06.695] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:06.837] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:26:07.031] [INFO] console - GET /login?username=sdfsdf&password=sdfsdf
-[2018-04-10T22:33:26.709] [INFO] console - GET /login?username=admin&password=3223432
-[2018-04-10T22:33:32.716] [INFO] console - GET /login?username=admin&password=3223432
-[2018-04-10T22:35:57.174] [INFO] console - GET /login?username=addfsd&password=sdfsdfs
-[2018-04-10T22:36:03.428] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T20:50:03.793] [INFO] console - GET /register?username=admin&password=33e78d60bc1f9dcc7291c891e6f069e4
+[2018-04-11T20:50:11.891] [INFO] console - GET /register?username=admin&password=33e78d60bc1f9dcc7291c891e6f069e4
+[2018-04-11T20:50:14.928] [INFO] console - GET /register?username=admin&password=33e78d60bc1f9dcc7291c891e6f069e4
+[2018-04-11T20:57:31.812] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T20:57:48.630] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T20:57:58.910] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T20:58:28.594] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T20:59:13.527] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T20:59:28.885] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:10:08.326] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:10:44.350] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:10:54.502] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:11:31.686] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:13:09.780] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:15:21.778] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:16:26.928] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:16:39.807] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T21:17:19.353] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
