@@ -102,3 +102,433 @@
 [2018-04-10T22:33:32.716] [INFO] console - GET /login?username=admin&password=3223432
 [2018-04-10T22:35:57.174] [INFO] console - GET /login?username=addfsd&password=sdfsdfs
 [2018-04-10T22:36:03.428] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T11:27:15.054] [INFO] console - GET /login?username=sdfsdf&password=sdfdsf
+[2018-04-11T11:27:17.086] [INFO] console - GET /login?username=sdfsdf&password=sdfdsf
+[2018-04-11T11:27:17.850] [INFO] console - GET /login?username=sdfsdf&password=sdfdsf
+[2018-04-11T11:27:18.014] [INFO] console - GET /login?username=sdfsdf&password=sdfdsf
+[2018-04-11T11:30:59.179] [INFO] console - GET /login?username=sdfsdf&password=sdfdsf
+[2018-04-11T11:49:51.994] [INFO] console - GET /login?username=&password=
+[2018-04-11T11:50:41.983] [INFO] console - GET /login?username=jjj&password=jjj
+[2018-04-11T13:38:00.992] [INFO] console - GET /login?username=sdfdsf&password=dsfsdf
+[2018-04-11T13:50:37.782] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T14:04:09.770] [INFO] console - GET /login?username=admin&password=sdfsdfds
+[2018-04-11T14:05:20.645] [INFO] console - GET /login?username=admin&password=sdfsdfds
+[2018-04-11T14:05:28.344] [INFO] console - GET /login?username=admin&password=sdfsdfds
+[2018-04-11T14:05:30.272] [INFO] console - GET /login?username=admin&password=sdfsdfds
+[2018-04-11T14:06:07.190] [INFO] console - GET /login?username=admin&password=12
+[2018-04-11T14:06:11.320] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T14:08:11.616] [INFO] console - GET /login?username=&password=
+[2018-04-11T14:08:59.939] [INFO] console - GET /login?username=dfsfsdf&password=dsfsdf
+[2018-04-11T14:09:03.588] [INFO] console - GET /login?username=dfsfsdf&password=dsfsdf
+[2018-04-11T14:09:06.012] [INFO] console - GET /login?username=dfsfsdf&password=dsfsdf
+[2018-04-11T14:09:16.160] [INFO] console - GET /login?username=&password=
+[2018-04-11T14:09:29.172] [INFO] console - GET /login?username=&password=
+[2018-04-11T14:09:36.049] [INFO] console - GET /login?username=&password=
+[2018-04-11T14:09:41.493] [INFO] console - GET /login?username=&password=
+[2018-04-11T14:10:41.983] [INFO] console - GET /login?username=dsfdsf&password=dsfsdf
+[2018-04-11T14:51:04.822] [INFO] console - OPTIONS /register
+[2018-04-11T14:52:16.975] [INFO] console - OPTIONS /register
+[2018-04-11T14:53:00.932] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T14:53:25.808] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T14:56:08.318] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T14:58:27.038] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T14:59:25.695] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:00:15.248] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:01:01.237] [INFO] console - GET /register?username=&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-11T15:01:57.504] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:02:16.531] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:02:28.862] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:03:51.415] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:07:34.486] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:07:39.526] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:10:32.934] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:12:42.328] [INFO] console - GET /register?username=ewrer&password=e130e5e618f15cee7a519d8b7b8306a0
+[2018-04-11T15:18:05.054] [ERROR] console - { MongoError: E11000 duplicate key error collection: vblog.users index: username_1 dup key: { : "tester" }
+    at C:\project\VBlog-Server\node_modules\_mongodb@3.0.4@mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\project\VBlog-Server\node_modules\_mongodb@3.0.4@mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\project\VBlog-Server\node_modules\_mongodb@3.0.4@mongodb\lib\bulk\unordered.js:456:5)
+    at C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  name: 'BulkWriteError',
+  message: 'E11000 duplicate key error collection: vblog.users index: username_1 dup key: { : "tester" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: vblog.users index: username_1 dup key: { : "tester" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function],
+  result: 
+   BulkWriteResult {
+     ok: [Getter],
+     nInserted: [Getter],
+     nUpserted: [Getter],
+     nMatched: [Getter],
+     nModified: [Getter],
+     nRemoved: [Getter],
+     getInsertedIds: [Function],
+     getUpsertedIds: [Function],
+     getUpsertedIdAt: [Function],
+     getRawResponse: [Function],
+     hasWriteErrors: [Function],
+     getWriteErrorCount: [Function],
+     getWriteErrorAt: [Function],
+     getWriteErrors: [Function],
+     getLastOp: [Function],
+     getWriteConcernError: [Function],
+     toJSON: [Function],
+     toString: [Function],
+     isOk: [Function] } }
+[2018-04-11T15:18:05.066] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T15:31:59.005] [INFO] console - GET /login?username=amdin&password=123456
+[2018-04-11T15:32:18.688] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T15:32:58.761] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T15:41:55.952] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T15:42:03.762] [INFO] console - GET /login?username=admin&password=1234562
+[2018-04-11T16:09:48.885] [INFO] console - GET /login?username=admin&password=123456
+[2018-04-11T16:10:21.864] [ERROR] console - { MongoError: E11000 duplicate key error collection: vblog.users index: username_1 dup key: { : "admin" }
+    at C:\project\VBlog-Server\node_modules\_mongodb@3.0.4@mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\project\VBlog-Server\node_modules\_mongodb@3.0.4@mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\project\VBlog-Server\node_modules\_mongodb@3.0.4@mongodb\lib\bulk\unordered.js:456:5)
+    at C:\project\VBlog-Server\node_modules\_mongodb-core@3.0.4@mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  name: 'BulkWriteError',
+  message: 'E11000 duplicate key error collection: vblog.users index: username_1 dup key: { : "admin" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: vblog.users index: username_1 dup key: { : "admin" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function],
+  result: 
+   BulkWriteResult {
+     ok: [Getter],
+     nInserted: [Getter],
+     nUpserted: [Getter],
+     nMatched: [Getter],
+     nModified: [Getter],
+     nRemoved: [Getter],
+     getInsertedIds: [Function],
+     getUpsertedIds: [Function],
+     getUpsertedIdAt: [Function],
+     getRawResponse: [Function],
+     hasWriteErrors: [Function],
+     getWriteErrorCount: [Function],
+     getWriteErrorAt: [Function],
+     getWriteErrors: [Function],
+     getLastOp: [Function],
+     getWriteConcernError: [Function],
+     toJSON: [Function],
+     toString: [Function],
+     isOk: [Function] } }
+[2018-04-11T16:10:21.867] [INFO] console - GET /register?username=admin&password=efffb989807083913228084ee60bbd02
+[2018-04-11T16:12:01.216] [INFO] console - GET /register?username=admin&password=efffb989807083913228084ee60bbd02
+[2018-04-11T16:12:38.637] [INFO] console - GET /register?username=admin&password=efffb989807083913228084ee60bbd02
+[2018-04-11T16:13:13.466] [INFO] console - GET /register?username=admin&password=efffb989807083913228084ee60bbd02
+[2018-04-11T16:25:11.732] [INFO] console - GET /register?username=admin&password=734981f7d570d55662b37d94c502651c
+[2018-04-11T16:27:23.535] [INFO] console - GET /register?username=admin&password=a165b8136bcd14a15e71c448e8d0d622
+[2018-04-11T16:27:31.502] [INFO] console - GET /register?username=tester&password=a165b8136bcd14a15e71c448e8d0d622
+[2018-04-11T16:34:25.594] [INFO] console - GET /register?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-11T16:34:51.029] [INFO] console - GET /register?username=hello&password=5d41402abc4b2a76b9719d911017c592
+[2018-04-11T16:36:48.587] [INFO] console - GET /register?username=111&password=b59c67bf196a4758191e42f76670ceba
+[2018-04-11T16:38:26.049] [INFO] console - GET /register?username=23423432&password=0e9212587d373ca58e9bada0c15e6fe4
+[2018-04-11T16:38:51.880] [INFO] console - GET /register?username=666&password=fae0b27c451c728867a567e8c1bb4e53
+[2018-04-11T16:55:46.996] [INFO] console - GET /login?username=tester&password=tester
+[2018-04-11T16:59:46.009] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:00:09.439] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:09:33.535] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:10:56.891] [INFO] console - GET /register?username=1111&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:19:27.789] [INFO] console - GET /register?username=tester&password=3a56a07f655f0956cd47655764ebcab9
+[2018-04-11T17:19:37.819] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:21:13.854] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:21:31.170] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:23:49.441] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:24:07.551] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:30:35.600] [INFO] console - GET /register?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-11T17:31:07.419] [INFO] console - GET /login?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-11T17:45:09.453] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:45:49.549] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:46:05.976] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:46:52.180] [INFO] console - GET /register?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-11T17:47:04.968] [INFO] console - GET /login?username=halo&password=5e36941b3d856737e81516acd45edc50
+[2018-04-11T17:47:09.919] [INFO] console - GET /login?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-11T17:48:59.176] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:48:59.191] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:49:15.024] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:49:15.026] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:49:36.676] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:49:36.689] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:50:18.469] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:50:18.471] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:52:35.702] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:52:35.714] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:52:40.482] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:52:40.485] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:54:35.804] [ERROR] console - { ValidationError: User validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { password: 
+      { ValidatorError: Path `password` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'password',
+        value: undefined,
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-11T17:54:35.818] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:54:46.022] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:55:03.261] [INFO] console - GET /login?username=tester&password=28b662d883b6d76fd96e4ddc5e9ba780
+[2018-04-11T17:55:06.297] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-11T17:55:29.044] [INFO] console - GET /register?username=tester&password=569ef72642be0fadd711d6a468d68ee1
