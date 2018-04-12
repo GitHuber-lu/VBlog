@@ -4,7 +4,8 @@ const logger = require('../logs/log').logger;
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
 const bcrypt = require('bcrypt');
-const saltRounds = 10;
+const jwt = require("jsonwebtoken");
+const config = require('../config/config.js');
 
 //用户登录
 router.get('/login', function (req, res, next) {
@@ -19,7 +20,10 @@ router.get('/login', function (req, res, next) {
     if (doc) {
       bcrypt.compare(_password, doc.password, function (err, flag) {
         if (flag) {
-          return res.json({ code: 200, data: null, message: '权限验证成功' });
+          const _token = jwt.sign({name: _username},'config.Token.secret',{
+               expiresIn: config.Token.expires
+          });
+          return res.json({ code: 200, data: { token: _token }, message: '验证通过' });
         }
         return res.json({ code: 600, data: null, message: '用户名或密码错误' });
       });
@@ -41,7 +45,7 @@ router.get('/register', function (req, res, next) {
     if (doc && doc.username === _username) {
       return res.json({ code: 601, data: null, message: '用户名已存在' });
     }
-    bcrypt.genSalt(saltRounds, function (err, salt) {
+    bcrypt.genSalt(10, function (err, salt) {
       bcrypt.hash(_password, salt, function (err, hash) {
         let user = new User({
           username: _username,

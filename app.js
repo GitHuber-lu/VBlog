@@ -6,6 +6,7 @@ const logger = require('morgan');
 const log4js = require('./logs/log');
 const mongoose = require('./config/mongoose.js');
 const db = mongoose();
+const session = require('express-session');
 
 const indexRouter = require('./routes/index');
 const userRouter = require('./routes/user');
@@ -19,14 +20,19 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+// app.use(cookieParser('bingo_'));
+// app.use(session({
+//   secret: 'bingo_',
+//   resave: true,
+//   saveUninitialized: true
+// }))
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.all('*', function(req, res, next) {
+app.all('*', function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-  res.header("X-Powered-By",' 3.2.1');
+  res.header("Access-Control-Allow-Headers", "X-Requested-With,Token");
+  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+  res.header("X-Powered-By", ' 3.2.1');
   res.header("Content-Type", "application/json;charset=utf-8");
   next();
 });
@@ -40,7 +46,7 @@ app.use('/', userRouter);
 // });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

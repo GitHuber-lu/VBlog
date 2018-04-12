@@ -1,3 +1,7 @@
 module.exports = {
-    mongodb: 'mongodb://admin:admin@localhost:27017/vblog',
+    Mongodb: 'mongodb://admin:admin@localhost:27017/vblog',
+    Token:{
+        secret:'bingo_',
+        expires: 24 * 60 * 60
+    }
 }
