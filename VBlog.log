@@ -32,3 +32,105 @@
 [2018-04-12T17:45:05.875] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
 [2018-04-12T17:45:58.358] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
 [2018-04-12T17:45:58.446] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:42:43.130] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:42:43.377] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:42:51.834] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:42:52.046] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:43:18.096] [INFO] console - OPTIONS /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:43:18.322] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:43:33.202] [INFO] console - OPTIONS /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:43:33.209] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:43:41.625] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:43:41.847] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T20:53:13.779] [INFO] console - OPTIONS /login?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-12T20:53:23.709] [INFO] console - OPTIONS /login?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-12T20:54:03.478] [INFO] console - OPTIONS /register?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-12T20:54:03.689] [INFO] console - GET /register?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-12T20:54:20.279] [INFO] console - OPTIONS /login?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-12T20:54:20.489] [INFO] console - GET /login?username=halo&password=57f842286171094855e51fc3a541c1e2
+[2018-04-12T21:00:09.767] [INFO] console - OPTIONS /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:00:09.979] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:00:14.251] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:00:21.344] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:00:21.561] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:03:25.128] [INFO] console - OPTIONS /register?username=admin&password=21232f297a57a5a743894a0e4a801fc3
+[2018-04-12T21:03:25.340] [INFO] console - GET /register?username=admin&password=21232f297a57a5a743894a0e4a801fc3
+[2018-04-12T21:24:06.851] [INFO] console - OPTIONS /register?username=halo&password=e10adc3949ba59abbe56e057f20f883e
+[2018-04-12T21:24:07.075] [INFO] console - GET /register?username=halo&password=e10adc3949ba59abbe56e057f20f883e
+[2018-04-12T21:24:23.722] [INFO] console - OPTIONS /login?username=halo&password=e10adc3949ba59abbe56e057f20f883e
+[2018-04-12T21:24:23.933] [INFO] console - GET /login?username=halo&password=e10adc3949ba59abbe56e057f20f883e
+[2018-04-12T21:27:31.499] [INFO] console - OPTIONS /register?username=&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:27:31.710] [ERROR] console - { ValidationError: User validation failed: username: Path `username` is required.
+    at ValidationError.inspect (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:430:38)
+    at inspect (util.js:324:10)
+    at Object.format (util.js:191:12)
+    at Object.inspect (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:430:38)
+    at inspect (util.js:324:10)
+    at Object.format (util.js:191:12)
+    at formatLogData (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+  errors: 
+   { username: 
+      { ValidatorError: Path `username` is required.
+    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+    at Array.forEach (<anonymous>)
+    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `username` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'username',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'User validation failed',
+  name: 'ValidationError' }
+[2018-04-12T21:27:31.720] [INFO] console - GET /register?username=&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:34:59.943] [INFO] console - OPTIONS /register?username=1231&password=4297f44b13955235245b2497399d7a93
+[2018-04-12T21:35:00.160] [INFO] console - GET /register?username=1231&password=4297f44b13955235245b2497399d7a93
+[2018-04-12T21:36:08.163] [INFO] console - OPTIONS /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:08.363] [INFO] console - GET /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:12.473] [INFO] console - GET /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:15.133] [INFO] console - OPTIONS /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:15.139] [INFO] console - GET /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:26.214] [INFO] console - OPTIONS /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:26.222] [INFO] console - GET /register?username=halo&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:47.534] [INFO] console - OPTIONS /register?username=ewrwerwer&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:36:47.747] [INFO] console - GET /register?username=ewrwerwer&password=d41d8cd98f00b204e9800998ecf8427e
+[2018-04-12T21:52:02.841] [INFO] console - OPTIONS /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:52:03.054] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:52:15.681] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:52:15.894] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:57:03.317] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:57:57.250] [INFO] console - OPTIONS /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:57:57.456] [INFO] console - GET /register?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:58:56.106] [INFO] console - OPTIONS /login?username=te&password=e358efa489f58062f10dd7316b65649e
+[2018-04-12T21:59:06.203] [INFO] console - OPTIONS /login?username=tester&password=ec46d8a868b8c8ddd478508bc7c0c4dd
+[2018-04-12T21:59:06.415] [INFO] console - GET /login?username=tester&password=ec46d8a868b8c8ddd478508bc7c0c4dd
+[2018-04-12T21:59:12.141] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:59:12.352] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T21:59:24.317] [INFO] console - OPTIONS /login?username=fghfhgf&password=89f25685515117d9ef631697df123bf9
+[2018-04-12T22:00:01.560] [INFO] console - OPTIONS /login?username=dfgdfg&password=8d509c28896865f8640f328f30f15721
+[2018-04-12T22:03:17.115] [INFO] console - OPTIONS /login?username=sdfdsfsf&password=8c71fb3f7593543f2ad180d31148a7cf
+[2018-04-12T22:03:19.993] [INFO] console - GET /login?username=sdfdsfsf&password=8c71fb3f7593543f2ad180d31148a7cf
+[2018-04-12T22:03:35.458] [INFO] console - OPTIONS /login?username=sdfsdf&password=c6f57d65617a6e1e066d3d318fcd652c
+[2018-04-12T22:03:35.465] [INFO] console - GET /login?username=sdfsdf&password=c6f57d65617a6e1e066d3d318fcd652c
+[2018-04-12T22:03:40.929] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T22:03:41.060] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T22:05:39.505] [INFO] console - OPTIONS /login?username=sdfsdf&password=d58e3582afa99040e27b92b13c8f2280
+[2018-04-12T22:05:39.527] [INFO] console - GET /login?username=sdfsdf&password=d58e3582afa99040e27b92b13c8f2280
+[2018-04-12T22:05:44.519] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-12T22:05:44.758] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9

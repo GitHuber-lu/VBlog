@@ -3,7 +3,7 @@ const router = express.Router();
 const logger = require('../logs/log').logger;
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const config = require('../config/config.js');
 
@@ -20,13 +20,15 @@ router.get('/login', function (req, res, next) {
     if (doc) {
       bcrypt.compare(_password, doc.password, function (err, flag) {
         if (flag) {
-          const _token = jwt.sign({name: _username},'config.Token.secret',{
-               expiresIn: config.Token.expires
+          const _token = jwt.sign({ name: _username }, 'config.Token.secret', {
+            expiresIn: config.Token.expires
           });
           return res.json({ code: 200, data: { token: _token }, message: '验证通过' });
         }
         return res.json({ code: 600, data: null, message: '用户名或密码错误' });
       });
+    }else{
+      return res.json({ code: 600, data: null, message: '用户名或密码错误' });
     }
   })
 
