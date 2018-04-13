@@ -134,3 +134,7 @@
 [2018-04-12T22:05:39.527] [INFO] console - GET /login?username=sdfsdf&password=d58e3582afa99040e27b92b13c8f2280
 [2018-04-12T22:05:44.519] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
 [2018-04-12T22:05:44.758] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-13T10:11:29.634] [INFO] console - OPTIONS /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-13T10:11:29.763] [INFO] console - GET /login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-13T17:31:09.528] [INFO] console - OPTIONS /api/login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-04-13T17:31:09.659] [INFO] console - GET /api/login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
