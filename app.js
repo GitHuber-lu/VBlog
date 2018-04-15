@@ -7,9 +7,11 @@ const log4js = require('./logs/log');
 const mongoose = require('./config/mongoose.js');
 const db = mongoose();
 const session = require('express-session');
+const bodyParser = require('body-parser');
 
-const indexRouter = require('./routes/index');
+// const indexRouter = require('./routes/index');
 const userRouter = require('./routes/user');
+const ueRouter = require('./routes/ueditor');
 
 const app = express();
 log4js.use(app);
@@ -20,12 +22,10 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(cookieParser('bingo_'));
-// app.use(session({
-//   secret: 'bingo_',
-//   resave: true,
-//   saveUninitialized: true
-// }))
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.all('*', function (req, res, next) {
@@ -37,8 +37,9 @@ app.all('*', function (req, res, next) {
   next();
 });
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 app.use('/api', userRouter);
+app.use('/api', ueRouter);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

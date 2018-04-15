@@ -3,32 +3,29 @@ const router = express.Router();
 const logger = require('../logs/log').logger;
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
+const ueditor = require("ueditor");
+const path = require('path');
 
-//上传图片
-router.get('/upload', function (req, res, next) {
-  const _username = req.query.username;
-  const _password = req.query.password;
-  User.findOne({ username: _username }, function (err, doc) {
-    if (err) {
-      logger.error(err);
-      res.json({ code: 600, data: null, message: '查询失败' });
-      return;
+//ueditor 上传
+router.all("/ue", ueditor('public', function (req, res, next) {
+  var dir = '/upload/image/'
+  const actionType = req.query.action;
+  if (actionType === 'uploadimage' || actionType === 'uploadfile' || actionType === 'uploadvideo') {
+    let fileUrl = dir;
+    if (actionType === 'uploadfile') {
+      fileUrl = '/upload/file/'; 
     }
-    if (doc) {
-      bcrypt.compare(_password, doc.password, function (err, flag) {
-        if (flag) {
-          const _token = jwt.sign({ name: _username }, 'config.Token.secret', {
-            expiresIn: config.Token.expires
-          });
-          return res.json({ code: 200, data: { token: _token }, message: '验证通过' });
-        }
-        return res.json({ code: 600, data: null, message: '用户名或密码错误' });
-      });
-    }else{
-      return res.json({ code: 600, data: null, message: '用户名或密码错误' });
+    if (actionType === 'uploadvideo') {
+      fileUrl = '/upload/video/';
     }
-  })
-
-});
+    res.ue_up(fileUrl); 
+    res.setHeader('Content-Type', 'text/html');
+  }else if (req.query.action === 'listimage') {
+    res.ue_list(dir); 
+  }else {
+    res.setHeader('Content-Type', 'application/json');
+    res.redirect('/ueditor/ueditor.config.json');
+  }
+}));
 
 module.exports = router;
