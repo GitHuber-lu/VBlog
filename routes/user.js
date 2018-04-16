@@ -14,7 +14,7 @@ router.get('/login', function (req, res, next) {
   User.findOne({ username: _username }, function (err, doc) {
     if (err) {
       logger.error(err);
-      res.json({ code: 600, data: null, message: '查询失败' });
+      res.json({ code: 'err', data: null, message: '查询失败' });
       return;
     }
     if (doc) {
@@ -23,29 +23,29 @@ router.get('/login', function (req, res, next) {
           const _token = jwt.sign({ name: _username }, 'config.Token.secret', {
             expiresIn: config.Token.expires
           });
-          return res.json({ code: 200, data: { token: _token }, message: '验证通过' });
+          return res.json({ code: 'success', data: { token: _token }, message: '验证通过' });
         }
-        return res.json({ code: 600, data: null, message: '用户名或密码错误' });
+        return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
       });
     }else{
-      return res.json({ code: 600, data: null, message: '用户名或密码错误' });
+      return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
     }
   })
 
 });
 
 //用户注册
-router.get('/register', function (req, res, next) {
-  const _username = req.query.username;
-  const _password = req.query.password;
+router.put('/register', function (req, res, next) {
+  const _username = req.body.username;
+  const _password = req.body.password;
   User.findOne({ username: _username }, function (err, doc) {
     if (err) {
       logger.error(err);
-      res.json({ code: 600, data: null, message: '查询失败' });
+      res.json({ code: 'error', data: null, message: '查询失败' });
       return;
     }
     if (doc && doc.username === _username) {
-      return res.json({ code: 601, data: null, message: '用户名已存在' });
+      return res.json({ code: 'error_user_exist', data: null, message: '用户名已存在' });
     }
     bcrypt.genSalt(10, function (err, salt) {
       bcrypt.hash(_password, salt, function (err, hash) {
@@ -56,9 +56,9 @@ router.get('/register', function (req, res, next) {
         user.save(function (err, doc) {
           if (err) {
             logger.error(err);
-            return res.json({ code: 600, data: null, message: '创建用户失败' });
+            return res.json({ code: 'error', data: null, message: '创建用户失败' });
           }
-          return res.json({ code: 200, data: null, message: '成功创建用户' });
+          return res.json({ code: 'success', data: null, message: '成功创建用户' });
         })
       });
     });
