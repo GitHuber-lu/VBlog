@@ -35,7 +35,7 @@ router.get('/login', function (req, res, next) {
 });
 
 //用户注册
-router.get('/register', function (req, res, next) {
+router.put('/register', function (req, res, next) {
   const _username = req.query.username;
   const _password = req.query.password;
   User.findOne({ username: _username }, function (err, doc) {
