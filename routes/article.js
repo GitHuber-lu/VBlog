@@ -40,7 +40,8 @@ router.get('/getArticleIntroList', function (req, res, next) {
 
 //获得文章详情
 router.get('/getArticleDetail', function (req, res, next) {
-  const id = req.params.id;
+  const id = req.query.id;
+  console.log(id)
   Article.findOne({ _id: id }, function (err, doc) {
     if (err) {
       logger.error(err);
