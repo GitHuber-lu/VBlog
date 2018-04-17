@@ -31,7 +31,7 @@ router.get('/getArticleIntroList', function (req, res, next) {
     }
     let temp = [];
     for (let item of doc) {
-      temp.push({ id: item._id, title: item.title, content: item.content.replace(/<[^>]+>/g, '') })
+      temp.push({ id: item._id, title: item.title, content: item.content.replace(/<[^>]+>/g, '').substring(0, 200)+'...' })
     }
     return res.json({ code: 'success', data: temp, message: '获取文章列表成功' })
   })
