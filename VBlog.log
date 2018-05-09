@@ -3645,6 +3645,128 @@
 [2018-04-17T21:11:51.233] [INFO] console - GET /api/getArticleIntroList
 [2018-04-17T21:12:12.030] [INFO] console - GET /api/ue?action=config&callback=bd__editor__jbsblh
 [2018-04-17T21:12:12.036] [INFO] console - GET /ueditor/ueditor.config.json
+<<<<<<< HEAD
+[2018-04-19T16:46:51.692] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-04-19T16:46:52.144] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:06.017] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:11.466] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-19T16:47:11.511] [INFO] console - GET /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-19T16:47:15.549] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:16.732] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:47:16.756] [INFO] console - GET /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:47:17.964] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:19.265] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:47:19.296] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:47:21.746] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:23.503] [INFO] console - GET /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:47:24.596] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:49:11.200] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:49:15.404] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:49:16.676] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:49:18.239] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:49:19.360] [INFO] console - GET /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-19T16:49:21.486] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:51:11.800] [INFO] console - GET /api/ue?action=config&callback=bd__editor__ymk7o1
+[2018-04-19T16:51:11.850] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-04-19T16:51:24.895] [INFO] console - OPTIONS /api/publishArticle
+[2018-04-19T16:51:25.148] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `title` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'title',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true },
+     content: 
+      { ValidatorError: Path `content` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `content` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'content',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'Article validation failed',
+  name: 'ValidationError' }
+[2018-04-19T16:51:25.155] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:26.742] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+=======
 [2018-04-17T21:14:07.207] [INFO] console - OPTIONS /api/getArticleIntroList
 [2018-04-17T21:14:07.220] [INFO] console - GET /api/getArticleIntroList
 [2018-04-17T21:14:10.118] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
@@ -3710,6 +3832,7 @@
     at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
     at process._tickCallback (internal/process/next_tick.js:180:9)
+>>>>>>> 19295503222a8a82b12ac844120c61a3852a2e68
         message: 'Path `title` is required.',
         name: 'ValidatorError',
         properties: [Object],
@@ -3720,14 +3843,14 @@
         '$isValidatorError': true },
      content: 
       { ValidatorError: Path `content` is required.
-    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
-    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
-    at Array.forEach (<anonymous>)
-    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
         message: 'Path `content` is required.',
         name: 'ValidatorError',
         properties: [Object],
@@ -3738,41 +3861,41 @@
         '$isValidatorError': true } },
   _message: 'Article validation failed',
   name: 'ValidationError' }
-[2018-04-18T19:31:42.040] [INFO] console - PUT /api/publishArticle
-[2018-04-18T19:31:42.942] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
-    at ValidationError.inspect (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
-    at formatValue (util.js:430:38)
-    at inspect (util.js:324:10)
-    at Object.format (util.js:191:12)
-    at Object.inspect (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
-    at formatValue (util.js:430:38)
-    at inspect (util.js:324:10)
-    at Object.format (util.js:191:12)
-    at formatLogData (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
-    at basicLayout (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
-    at app (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
-    at appenders.forEach (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+[2018-04-19T16:51:26.744] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:28.239] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
     at Array.forEach (<anonymous>)
-    at Logger.sendLogEventToAppender [as dispatch] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
-    at Logger._log (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
-    at Logger.(anonymous function) [as error] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
-    at article.save (e:\Code\VBlog-Server\routes\article.js:17:14)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
-    at $__save.error (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
-    at E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
-    at next (E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
-    at Kareem.execPost (E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
   errors: 
    { title: 
       { ValidatorError: Path `title` is required.
-    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
-    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
-    at Array.forEach (<anonymous>)
-    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
         message: 'Path `title` is required.',
         name: 'ValidatorError',
         properties: [Object],
@@ -3783,14 +3906,14 @@
         '$isValidatorError': true },
      content: 
       { ValidatorError: Path `content` is required.
-    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
-    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
-    at Array.forEach (<anonymous>)
-    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
         message: 'Path `content` is required.',
         name: 'ValidatorError',
         properties: [Object],
@@ -3801,41 +3924,42 @@
         '$isValidatorError': true } },
   _message: 'Article validation failed',
   name: 'ValidationError' }
-[2018-04-18T19:31:42.945] [INFO] console - PUT /api/publishArticle
-[2018-04-18T19:31:43.416] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
-    at ValidationError.inspect (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
-    at formatValue (util.js:430:38)
-    at inspect (util.js:324:10)
-    at Object.format (util.js:191:12)
-    at Object.inspect (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
-    at formatValue (util.js:430:38)
-    at inspect (util.js:324:10)
-    at Object.format (util.js:191:12)
-    at formatLogData (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
-    at basicLayout (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
-    at app (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
-    at appenders.forEach (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+[2018-04-19T16:51:28.241] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:34.018] [INFO] console - OPTIONS /api/publishArticle
+[2018-04-19T16:51:34.022] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
     at Array.forEach (<anonymous>)
-    at Logger.sendLogEventToAppender [as dispatch] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
-    at Logger._log (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
-    at Logger.(anonymous function) [as error] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
-    at article.save (e:\Code\VBlog-Server\routes\article.js:17:14)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
-    at $__save.error (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
-    at E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
-    at next (E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
-    at Kareem.execPost (E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
   errors: 
    { title: 
       { ValidatorError: Path `title` is required.
-    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
-    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
-    at Array.forEach (<anonymous>)
-    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
         message: 'Path `title` is required.',
         name: 'ValidatorError',
         properties: [Object],
@@ -3846,14 +3970,14 @@
         '$isValidatorError': true },
      content: 
       { ValidatorError: Path `content` is required.
-    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
-    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
-    at Array.forEach (<anonymous>)
-    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
-    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
         message: 'Path `content` is required.',
         name: 'ValidatorError',
         properties: [Object],
@@ -3864,6 +3988,7 @@
         '$isValidatorError': true } },
   _message: 'Article validation failed',
   name: 'ValidationError' }
+<<<<<<< HEAD
 [2018-04-18T19:31:43.419] [INFO] console - PUT /api/publishArticle
 [2018-04-18T19:40:57.649] [INFO] console - GET /api/ue?action=config&callback=bd__editor__8zr4hz
 [2018-04-18T19:40:57.655] [INFO] console - GET /ueditor/ueditor.config.json
@@ -5407,3 +5532,199 @@
 [2018-05-06T18:49:41.337] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5ec0b89498d1f1cbebacc
 [2018-05-06T18:49:41.348] [INFO] console - GET /api/getArticleDetail?id=5ad5ec0b89498d1f1cbebacc
 [2018-05-06T18:50:31.691] [INFO] console - GET /api/getArticleIntroList
+=======
+[2018-04-19T16:51:34.023] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:54.859] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:52:26.892] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:52:34.139] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:52:36.070] [INFO] console - GET /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:52:37.917] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:52:39.272] [INFO] console - GET /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-20T15:18:25.779] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-04-20T15:18:25.832] [INFO] console - GET /api/getArticleIntroList
+[2018-04-20T15:21:01.256] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-20T15:21:01.288] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-05-09T14:17:31.507] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:18:09.724] [INFO] console - OPTIONS /api/getArticleDetail
+[2018-05-09T14:18:16.558] [INFO] console - GET /api/ue?action=config&callback=bd__editor__z0jwse
+[2018-05-09T14:18:16.637] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:18:20.406] [INFO] console - GET /api/ue?action=config&callback=bd__editor__d1un0m
+[2018-05-09T14:18:20.415] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:18:33.208] [INFO] console - GET /api/ue?action=config&callback=bd__editor__wivqw6
+[2018-05-09T14:18:33.212] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:19:35.094] [INFO] console - OPTIONS /api/publishArticle
+[2018-05-09T14:21:51.911] [INFO] console - OPTIONS /api/publishArticle
+[2018-05-09T14:21:51.987] [INFO] console - PUT /api/publishArticle
+[2018-05-09T14:23:18.341] [INFO] console - GET /api/ue?undefined[]=http%3A%2F%2Fwww.meiwentingg.com%2Fuploads%2Fuserup%2F16251%2F15255T438-H18.jpg&action=&callback=bd__editor__pe6pw7
+[2018-05-09T14:23:18.350] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:23:22.174] [INFO] console - OPTIONS /api/publishArticle
+[2018-05-09T14:23:22.186] [INFO] console - PUT /api/publishArticle
+[2018-05-09T14:23:49.923] [INFO] console - OPTIONS /api/publishArticle
+[2018-05-09T14:23:49.930] [INFO] console - PUT /api/publishArticle
+[2018-05-09T14:24:02.175] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:02.255] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:10.921] [INFO] console - OPTIONS /api/getArticleDetail?id=5af293daf96e35eed46a57e0
+[2018-05-09T14:24:10.935] [INFO] console - GET /api/getArticleDetail?id=5af293daf96e35eed46a57e0
+[2018-05-09T14:24:14.926] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:14.935] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:39.367] [INFO] console - OPTIONS /api/getArticleDetail
+[2018-05-09T14:24:39.431] [INFO] console - GET /api/getArticleDetail
+[2018-05-09T14:24:39.874] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:39.884] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:42.284] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-05-09T14:24:42.341] [INFO] console - GET /api/ue?action=config&callback=bd__editor__ka37k7
+[2018-05-09T14:24:42.345] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-05-09T14:24:42.350] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:24:44.888] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:44.922] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:46.274] [INFO] console - OPTIONS /api/deleteArticle
+[2018-05-09T14:24:46.350] [INFO] console - POST /api/deleteArticle
+[2018-05-09T14:24:46.358] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:46.364] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:47.766] [INFO] console - OPTIONS /api/deleteArticle
+[2018-05-09T14:24:47.771] [INFO] console - POST /api/deleteArticle
+[2018-05-09T14:24:47.778] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:47.785] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:48.704] [INFO] console - OPTIONS /api/deleteArticle
+[2018-05-09T14:24:48.734] [INFO] console - POST /api/deleteArticle
+[2018-05-09T14:24:48.742] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:48.748] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:24:50.127] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:24:50.140] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:25:58.062] [INFO] console - OPTIONS /api/getArticleDetail
+[2018-05-09T14:25:58.071] [INFO] console - GET /api/getArticleDetail
+[2018-05-09T14:25:59.503] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:25:59.509] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:26:00.614] [INFO] console - GET /api/ue?action=config&callback=bd__editor__jny0vq
+[2018-05-09T14:26:00.689] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:26:38.235] [INFO] console - GET /api/ue?undefined[]=http%3A%2F%2Fwww.meiwentingg.com%2Fuploads%2Fuserup%2F16251%2F1525413356-5F3.jpg&action=&callback=bd__editor__1bausy
+[2018-05-09T14:26:38.239] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:26:50.036] [INFO] console - GET /api/ue?undefined[]=http%3A%2F%2Fwww.meiwentingg.com%2Fuploads%2Fuserup%2F16251%2F1525413356-5F3.jpg&action=&callback=bd__editor__g0u32v
+[2018-05-09T14:26:50.040] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:26:59.524] [INFO] console - GET /api/ue?undefined[]=http%3A%2F%2Fwww.meiwentingg.com%2Fuploads%2Fuserup%2F16251%2F1525413356-5F3.jpg&action=&callback=bd__editor__fkryf
+[2018-05-09T14:26:59.528] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:27:04.368] [INFO] console - OPTIONS /api/publishArticle
+[2018-05-09T14:27:04.375] [INFO] console - PUT /api/publishArticle
+[2018-05-09T14:27:07.872] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:28:03.862] [INFO] console - GET /api/getArticleDetail
+[2018-05-09T14:28:04.547] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:28:06.519] [INFO] console - GET /api/ue?action=config&callback=bd__editor__tlme1j
+[2018-05-09T14:28:06.581] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:29:16.387] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:29:17.686] [INFO] console - GET /api/ue?action=config&callback=bd__editor__m3dfit
+[2018-05-09T14:29:17.736] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:29:23.002] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:29:23.011] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:30:41.031] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:30:41.042] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:30:41.796] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T14:30:41.806] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:30:47.128] [INFO] console - OPTIONS /api/getArticleDetail?id=5af2937ff96e35eed46a57df
+[2018-05-09T14:30:47.165] [INFO] console - GET /api/getArticleDetail?id=5af2937ff96e35eed46a57df
+[2018-05-09T14:30:50.069] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:30:51.226] [INFO] console - GET /api/getArticleDetail?id=5af293daf96e35eed46a57e0
+[2018-05-09T14:30:52.631] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:30:53.857] [INFO] console - OPTIONS /api/getArticleDetail?id=5af293f5f96e35eed46a57e1
+[2018-05-09T14:30:53.863] [INFO] console - GET /api/getArticleDetail?id=5af293f5f96e35eed46a57e1
+[2018-05-09T14:30:56.880] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:30:58.475] [INFO] console - OPTIONS /api/getArticleDetail?id=5af294b8f96e35eed46a57e2
+[2018-05-09T14:30:58.482] [INFO] console - GET /api/getArticleDetail?id=5af294b8f96e35eed46a57e2
+[2018-05-09T14:31:06.214] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:10.264] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:11.525] [INFO] console - GET /api/ue?action=config&callback=bd__editor__2ltbtv
+[2018-05-09T14:31:11.536] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:11.928] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:12.472] [INFO] console - GET /api/ue?action=config&callback=bd__editor__mbdz4j
+[2018-05-09T14:31:12.480] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:12.894] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:13.419] [INFO] console - GET /api/ue?action=config&callback=bd__editor__qe2a2w
+[2018-05-09T14:31:13.427] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:13.944] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:14.622] [INFO] console - GET /api/ue?action=config&callback=bd__editor__6at1ov
+[2018-05-09T14:31:14.629] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:15.142] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:15.837] [INFO] console - GET /api/ue?action=config&callback=bd__editor__19q54j
+[2018-05-09T14:31:15.843] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:16.473] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:17.372] [INFO] console - GET /api/ue?action=config&callback=bd__editor__5thd04
+[2018-05-09T14:31:17.377] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:18.290] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:19.153] [INFO] console - GET /api/ue?action=config&callback=bd__editor__lg1t5u
+[2018-05-09T14:31:19.160] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:19.658] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:20.253] [INFO] console - GET /api/ue?action=config&callback=bd__editor__pb26cj
+[2018-05-09T14:31:20.262] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:21.293] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:22.650] [INFO] console - GET /api/ue?action=config&callback=bd__editor__m4p3lv
+[2018-05-09T14:31:22.658] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:24.374] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:25.818] [INFO] console - GET /api/ue?action=config&callback=bd__editor__9h1wgq
+[2018-05-09T14:31:25.827] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:27.237] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:28.704] [INFO] console - GET /api/ue?action=config&callback=bd__editor__l1d2qb
+[2018-05-09T14:31:28.715] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:30.122] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:31.502] [INFO] console - GET /api/ue?action=config&callback=bd__editor__wjkrg3
+[2018-05-09T14:31:31.510] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:32.671] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:33.903] [INFO] console - GET /api/ue?action=config&callback=bd__editor__51o1z5
+[2018-05-09T14:31:33.912] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:35.119] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:31:42.417] [INFO] console - GET /api/ue?action=config&callback=bd__editor__cmnifv
+[2018-05-09T14:31:42.425] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:31:45.651] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T14:51:45.252] [INFO] console - GET /api/ue?action=config&callback=bd__editor__jo02yw
+[2018-05-09T14:51:45.256] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T14:53:11.932] [INFO] console - OPTIONS /api/login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-05-09T14:53:12.100] [INFO] console - GET /api/login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-05-09T14:53:12.216] [INFO] console - GET /api/ue?action=config&callback=bd__editor__h608nv
+[2018-05-09T14:53:12.219] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:16:02.557] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T16:16:02.562] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:16:03.257] [INFO] console - GET /api/ue?action=config&callback=bd__editor__4r6w3m
+[2018-05-09T16:16:03.260] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:16:03.738] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:16:35.414] [INFO] console - OPTIONS /api/getArticleDetail?id=5af294b8f96e35eed46a57e2
+[2018-05-09T16:16:35.426] [INFO] console - GET /api/getArticleDetail?id=5af294b8f96e35eed46a57e2
+[2018-05-09T16:16:35.428] [INFO] console - GET /api/ue?action=config&callback=bd__editor__1l4ci1
+[2018-05-09T16:16:35.435] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:16:39.402] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:26:06.876] [INFO] console - GET /api/ue?action=config&callback=bd__editor__jyu3xq
+[2018-05-09T16:26:06.879] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:26:21.636] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T16:26:21.641] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:26:22.173] [INFO] console - GET /api/ue?action=config&callback=bd__editor__w213au
+[2018-05-09T16:26:22.178] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:26:53.262] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:26:55.952] [INFO] console - OPTIONS /api/getArticleDetail?id=5af293daf96e35eed46a57e0
+[2018-05-09T16:26:55.964] [INFO] console - GET /api/getArticleDetail?id=5af293daf96e35eed46a57e0
+[2018-05-09T16:26:55.980] [INFO] console - GET /api/ue?action=config&callback=bd__editor__40ta0s
+[2018-05-09T16:26:55.987] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:27:04.629] [INFO] console - GET /api/ue?action=config&callback=bd__editor__ep8ywb
+[2018-05-09T16:27:04.633] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:27:05.408] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:27:06.100] [INFO] console - GET /api/ue?action=config&callback=bd__editor__zd1u5y
+[2018-05-09T16:27:06.103] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:27:08.827] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:27:23.066] [INFO] console - GET /api/ue?action=config&callback=bd__editor__j1nq6v
+[2018-05-09T16:27:23.069] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:27:24.158] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:27:24.883] [INFO] console - GET /api/ue?action=config&callback=bd__editor__32b923
+[2018-05-09T16:27:24.893] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:28:32.462] [INFO] console - OPTIONS /api/login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-05-09T16:28:32.566] [INFO] console - GET /api/login?username=tester&password=f5d1278e8109edd94e1e4197e04873b9
+[2018-05-09T16:28:33.058] [INFO] console - GET /api/ue?action=config&callback=bd__editor__5itj74
+[2018-05-09T16:28:33.078] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-05-09T16:34:13.243] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T16:34:13.251] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:34:16.097] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T16:34:16.108] [INFO] console - GET /api/getArticleIntroList
+[2018-05-09T16:35:17.008] [INFO] console - OPTIONS /api/getArticleDetail?id=5af2937ff96e35eed46a57df
+[2018-05-09T16:35:17.016] [INFO] console - GET /api/getArticleDetail?id=5af2937ff96e35eed46a57df
+[2018-05-09T16:36:20.976] [INFO] console - OPTIONS /api/getArticleDetail?id=5af2937ff96e35eed46a57df
+[2018-05-09T16:36:20.986] [INFO] console - GET /api/getArticleDetail?id=5af2937ff96e35eed46a57df
+[2018-05-09T16:38:03.625] [INFO] console - OPTIONS /api/getArticleDetail
+[2018-05-09T16:38:03.766] [INFO] console - GET /api/getArticleDetail
+[2018-05-09T16:51:13.599] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-05-09T16:51:13.610] [INFO] console - GET /api/getArticleIntroList
+>>>>>>> 44689b5a8655844900be4251bc1f6e99d3207d70
