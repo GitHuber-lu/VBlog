@@ -3645,6 +3645,7 @@
 [2018-04-17T21:11:51.233] [INFO] console - GET /api/getArticleIntroList
 [2018-04-17T21:12:12.030] [INFO] console - GET /api/ue?action=config&callback=bd__editor__jbsblh
 [2018-04-17T21:12:12.036] [INFO] console - GET /ueditor/ueditor.config.json
+<<<<<<< HEAD
 [2018-04-19T16:46:51.692] [INFO] console - OPTIONS /api/getArticleIntroList
 [2018-04-19T16:46:52.144] [INFO] console - GET /api/getArticleIntroList
 [2018-04-19T16:47:06.017] [INFO] console - GET /api/getArticleIntroList
@@ -3765,6 +3766,73 @@
           at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
           at _combinedTickCallback (internal/process/next_tick.js:131:7)
           at process._tickCallback (internal/process/next_tick.js:180:9)
+=======
+[2018-04-17T21:14:07.207] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-04-17T21:14:07.220] [INFO] console - GET /api/getArticleIntroList
+[2018-04-17T21:14:10.118] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-17T21:14:10.125] [INFO] console - GET /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-17T21:14:12.527] [INFO] console - GET /api/getArticleIntroList
+[2018-04-17T21:14:13.832] [INFO] console - GET /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-17T21:14:14.817] [INFO] console - GET /api/getArticleIntroList
+[2018-04-17T21:14:15.513] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5ec0b89498d1f1cbebacc
+[2018-04-17T21:14:15.521] [INFO] console - GET /api/getArticleDetail?id=5ad5ec0b89498d1f1cbebacc
+[2018-04-17T21:14:27.231] [INFO] console - GET /api/getArticleIntroList
+[2018-04-17T21:14:28.841] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5eb0dacb3221b686f2f95
+[2018-04-17T21:14:28.848] [INFO] console - GET /api/getArticleDetail?id=5ad5eb0dacb3221b686f2f95
+[2018-04-17T21:14:46.533] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:30:33.743] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-04-18T19:30:33.774] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:30:37.032] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-18T19:30:37.047] [INFO] console - GET /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-18T19:30:40.185] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:30:41.489] [INFO] console - GET /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-18T19:30:43.286] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:30:44.491] [INFO] console - GET /api/getArticleDetail?id=5ad5ec3689498d1f1cbebacd
+[2018-04-18T19:30:45.930] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:30:47.082] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5ec0b89498d1f1cbebacc
+[2018-04-18T19:30:47.091] [INFO] console - GET /api/getArticleDetail?id=5ad5ec0b89498d1f1cbebacc
+[2018-04-18T19:30:55.328] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:30:56.349] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad5eb0dacb3221b686f2f95
+[2018-04-18T19:30:56.356] [INFO] console - GET /api/getArticleDetail?id=5ad5eb0dacb3221b686f2f95
+[2018-04-18T19:31:02.339] [INFO] console - GET /api/getArticleIntroList
+[2018-04-18T19:31:25.654] [INFO] console - GET /api/ue?action=config&callback=bd__editor__ql7sst
+[2018-04-18T19:31:25.660] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-04-18T19:31:41.978] [INFO] console - OPTIONS /api/publishArticle
+[2018-04-18T19:31:42.027] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:430:38)
+    at inspect (util.js:324:10)
+    at Object.format (util.js:191:12)
+    at Object.inspect (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:430:38)
+    at inspect (util.js:324:10)
+    at Object.format (util.js:191:12)
+    at formatLogData (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (E:\Code\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (e:\Code\VBlog-Server\routes\article.js:17:14)
+    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (E:\Code\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+    at new ValidatorError (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+    at validate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+    at Array.forEach (<anonymous>)
+    at SchemaString.SchemaType.doValidate (E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+    at E:\Code\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+>>>>>>> 19295503222a8a82b12ac844120c61a3852a2e68
         message: 'Path `title` is required.',
         name: 'ValidatorError',
         properties: [Object],

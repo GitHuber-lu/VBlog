@@ -31,7 +31,7 @@ router.get('/getArticleIntroList', function (req, res, next) {
     }
     let temp = [];
     for (let item of doc) {
-      temp.push({ id: item._id, title: item.title, content: item.content.replace(/<[^>]+>/g, '').substring(0, 200)+'...' })
+      temp.push({ id: item._id, title: item.title, content: item.content.replace(/<[^>]+>/g, '').substring(0, 120) + '...' })
     }
     return res.json({ code: 'success', data: temp, message: '获取文章列表成功' })
   })
@@ -41,13 +41,40 @@ router.get('/getArticleIntroList', function (req, res, next) {
 //获得文章详情
 router.get('/getArticleDetail', function (req, res, next) {
   const id = req.query.id;
-  console.log(id)
   Article.findOne({ _id: id }, function (err, doc) {
     if (err) {
       logger.error(err);
       return res.json({ code: 'error', data: null, message: '获取文章详情出错' })
     }
     return res.json({ code: 'success', data: doc, message: '获取文章详情成功' })
+  })
+
+});
+
+//更新文章详情
+router.post('/updateArticleDetail', function (req, res, next) {
+  const id = req.body.id;
+  const _title = req.body.title;
+  const _content = req.body.content;
+  Article.update({ _id: id }, { title: _title, content: _content }, function (err, doc) {
+    if (err) {
+      logger.error(err);
+      return res.json({ code: 'error', data: null, message: '更新文章失败' })
+    }
+    return res.json({ code: 'success', data: doc, message: '更新文章成功' })
+  })
+
+});
+
+//删除文章
+router.post('/deleteArticle', function (req, res, next) {
+  const id = req.body.id;
+  Article.remove({ _id: id }, function (err, doc) {
+    if (err) {
+      logger.error(err);
+      return res.json({ code: 'error', data: null, message: '删除文章失败' })
+    }
+    return res.json({ code: 'success', data: doc, message: '删除文章成功' })
   })
 
 });
