@@ -3645,3 +3645,289 @@
 [2018-04-17T21:11:51.233] [INFO] console - GET /api/getArticleIntroList
 [2018-04-17T21:12:12.030] [INFO] console - GET /api/ue?action=config&callback=bd__editor__jbsblh
 [2018-04-17T21:12:12.036] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-04-19T16:46:51.692] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-04-19T16:46:52.144] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:06.017] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:11.466] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-19T16:47:11.511] [INFO] console - GET /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-19T16:47:15.549] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:16.732] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:47:16.756] [INFO] console - GET /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:47:17.964] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:19.265] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:47:19.296] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:47:21.746] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:47:23.503] [INFO] console - GET /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:47:24.596] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:49:11.200] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:49:15.404] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:49:16.676] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:49:18.239] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:49:19.360] [INFO] console - GET /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-19T16:49:21.486] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:51:11.800] [INFO] console - GET /api/ue?action=config&callback=bd__editor__ymk7o1
+[2018-04-19T16:51:11.850] [INFO] console - GET /ueditor/ueditor.config.json
+[2018-04-19T16:51:24.895] [INFO] console - OPTIONS /api/publishArticle
+[2018-04-19T16:51:25.148] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `title` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'title',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true },
+     content: 
+      { ValidatorError: Path `content` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `content` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'content',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'Article validation failed',
+  name: 'ValidationError' }
+[2018-04-19T16:51:25.155] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:26.742] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `title` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'title',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true },
+     content: 
+      { ValidatorError: Path `content` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `content` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'content',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'Article validation failed',
+  name: 'ValidationError' }
+[2018-04-19T16:51:26.744] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:28.239] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `title` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'title',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true },
+     content: 
+      { ValidatorError: Path `content` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `content` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'content',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'Article validation failed',
+  name: 'ValidationError' }
+[2018-04-19T16:51:28.241] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:34.018] [INFO] console - OPTIONS /api/publishArticle
+[2018-04-19T16:51:34.022] [ERROR] console - { ValidationError: Article validation failed: title: Path `title` is required., content: Path `content` is required.
+    at ValidationError.inspect (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validation.js:56:24)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at Object.inspect (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:36:66)
+    at formatValue (util.js:372:36)
+    at inspect (util.js:236:10)
+    at Object.format (util.js:97:24)
+    at formatLogData (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:55:22)
+    at basicLayout (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\layouts.js:118:7)
+    at app (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\appenders\file.js:55:18)
+    at appenders.forEach (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:142:5)
+    at Array.forEach (<anonymous>)
+    at Logger.sendLogEventToAppender [as dispatch] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\log4js.js:141:13)
+    at Logger._log (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:95:12)
+    at Logger.(anonymous function) [as error] (C:\project\VBlog-Server\node_modules\_log4js@2.5.3@log4js\lib\logger.js:127:14)
+    at article.save (c:\project\VBlog-Server\routes\article.js:17:14)
+    at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:3950:16
+    at $__save.error (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\model.js:343:16)
+    at C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:246:48
+    at next (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:167:27)
+    at Kareem.execPost (C:\project\VBlog-Server\node_modules\_kareem@2.0.6@kareem\index.js:217:3)
+  errors: 
+   { title: 
+      { ValidatorError: Path `title` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `title` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'title',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true },
+     content: 
+      { ValidatorError: Path `content` is required.
+          at ValidatorError (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\error\validator.js:25:11)
+          at validate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:805:13)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:854:11
+          at Array.forEach (<anonymous>)
+          at SchemaString.SchemaType.doValidate (C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\schematype.js:814:19)
+          at C:\project\VBlog-Server\node_modules\_mongoose@5.0.14@mongoose\lib\document.js:1625:9
+          at _combinedTickCallback (internal/process/next_tick.js:131:7)
+          at process._tickCallback (internal/process/next_tick.js:180:9)
+        message: 'Path `content` is required.',
+        name: 'ValidatorError',
+        properties: [Object],
+        kind: 'required',
+        path: 'content',
+        value: '',
+        reason: undefined,
+        '$isValidatorError': true } },
+  _message: 'Article validation failed',
+  name: 'ValidationError' }
+[2018-04-19T16:51:34.023] [INFO] console - PUT /api/publishArticle
+[2018-04-19T16:51:54.859] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:52:26.892] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-19T16:52:34.139] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:52:36.070] [INFO] console - GET /api/getArticleDetail?id=5ad55cb65832a527c44762db
+[2018-04-19T16:52:37.917] [INFO] console - GET /api/getArticleIntroList
+[2018-04-19T16:52:39.272] [INFO] console - GET /api/getArticleDetail?id=5ad55cb95832a527c44762dc
+[2018-04-20T15:18:25.779] [INFO] console - OPTIONS /api/getArticleIntroList
+[2018-04-20T15:18:25.832] [INFO] console - GET /api/getArticleIntroList
+[2018-04-20T15:21:01.256] [INFO] console - OPTIONS /api/getArticleDetail?id=5ad55395d578183be410318b
+[2018-04-20T15:21:01.288] [INFO] console - GET /api/getArticleDetail?id=5ad55395d578183be410318b
