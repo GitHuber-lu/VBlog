@@ -7,6 +7,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const config = require('../config/config.js');
 
+const secret = config.Token.secret;
+
 //用户登录
 router.get('/login', function (req, res, next) {
   const _username = req.query.username;
@@ -20,7 +22,7 @@ router.get('/login', function (req, res, next) {
     if (doc) {
       bcrypt.compare(_password, doc.password, function (err, flag) {
         if (flag) {
-          const _token = jwt.sign({ name: _username }, 'config.Token.secret', {
+          const _token = jwt.sign({ name: _username }, secret, {
             expiresIn: config.Token.expires
           });
           return res.json({ code: 'success', data: { token: _token }, message: '验证通过' });

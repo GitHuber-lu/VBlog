@@ -3,6 +3,10 @@ const router = express.Router();
 const logger = require('../logs/log').logger;
 const mongoose = require('mongoose');
 const Article = mongoose.model('Article');
+const config = require('../config/config.js');
+const jwt = require("jsonwebtoken");
+
+const secret = config.Token.secret;
 
 //发布文章
 router.put('/publishArticle', function (req, res, next) {
@@ -69,6 +73,15 @@ router.post('/updateArticleDetail', function (req, res, next) {
 //删除文章
 router.post('/deleteArticle', function (req, res, next) {
   const id = req.body.id;
+  // const _token = req.headers.token;
+
+  // jwt.verify(_token, secret, function (err, decoded) {
+  //   if (err) {
+  //     logger.error(err);
+  //     res.json({ code: 'error', data: null, message: 'Token未通过验证' });
+  //     return;
+  //   }
+  // });
   Article.remove({ _id: id }, function (err, doc) {
     if (err) {
       logger.error(err);
