@@ -10,9 +10,9 @@ const config = require('../config/config.js');
 const secret = config.Token.secret;
 
 //用户登录
-router.get('/login', function (req, res, next) {
-  const _username = req.query.username;
-  const _password = req.query.password;
+router.post('/login', function (req, res, next) {
+  const _username = req.body.username;
+  const _password = req.body.password;
   User.findOne({ username: _username }, function (err, doc) {
     if (err) {
       logger.error(err);
