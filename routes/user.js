@@ -37,7 +37,7 @@ router.post('/login', function (req, res, next) {
 });
 
 //用户注册
-router.put('/register', function (req, res, next) {
+router.post('/register', function (req, res, next) {
   const _username = req.body.username;
   const _password = req.body.password;
   User.findOne({ username: _username }, function (err, doc) {
@@ -47,7 +47,7 @@ router.put('/register', function (req, res, next) {
       return;
     }
     if (doc && doc.username === _username) {
-      return res.json({ code: 'error_user_exist', data: null, message: '用户名已存在' });
+      return res.json({ code: 'error', data: null, message: '用户名已存在' });
     }
     bcrypt.genSalt(10, function (err, salt) {
       bcrypt.hash(_password, salt, function (err, hash) {
