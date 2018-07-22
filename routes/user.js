@@ -25,11 +25,11 @@ router.post('/login', function (req, res, next) {
           const _token = jwt.sign({ name: _username }, secret, {
             expiresIn: config.Token.expires
           });
-          return res.json({ code: 'success', data: { token: _token }, message: '验证通过' });
+          return res.json({ code: 'success', data: { token: _token, name: _username }, message: '验证通过' });
         }
         return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
       });
-    }else{
+    } else {
       return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
     }
   })
