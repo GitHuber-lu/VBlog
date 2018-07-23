@@ -65,6 +65,14 @@ router.post('/register', function (req, res, next) {
       });
     });
   })
+});
+
+// 根据token查询用户信息
+router.post('/register', function (req, res, next) {
+  const token = req.body.token;
+  User.findOne({},function(err, doc){
+    
+  })
 
 });
 
