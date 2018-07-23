@@ -25,7 +25,16 @@ router.post('/login', function (req, res, next) {
           const _token = jwt.sign({ name: _username }, secret, {
             expiresIn: config.Token.expires
           });
-          return res.json({ code: 'success', data: { token: _token, name: _username }, message: '验证通过' });
+          let user = new User({
+            token: _token
+          })
+          user.save((err, doc) => {
+            if (err) {
+              logger.error(err);
+              return res.json({ code: 'error', data: null, message: 'TOKEN保存失败' })
+            }
+            return res.json({ code: 'success', data: { token: _token, name: _username }, message: '验证通过' });
+          })
         }
         return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
       });
@@ -68,10 +77,14 @@ router.post('/register', function (req, res, next) {
 });
 
 // 根据token查询用户信息
-router.post('/register', function (req, res, next) {
-  const token = req.body.token;
-  User.findOne({},function(err, doc){
-    
+router.post('/getUserByToken', function (req, res, next) {
+  const _token = req.body.token;
+  User.findOne({ token: _token }, function (err, doc) {
+    if(err){
+      logger.error(err)
+      return res.json({ code: 'error', data: null, message: '查询用户信息失败' });
+    }
+    return res.json({ code: 'success', data: {dpc}, message: '查询成功' });
   })
 
 });
