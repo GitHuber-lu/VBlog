@@ -81,7 +81,7 @@ router.post('/getUserByToken', function (req, res, next) {
       logger.error(err)
       return res.json({ code: 'error', data: null, message: '查询用户信息失败' });
     }
-    return res.json({ code: 'success', data: { doc }, message: '查询成功' });
+    return res.json({ code: 'success', data: doc, message: '查询成功' });
   })
 
 });
