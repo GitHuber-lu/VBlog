@@ -25,18 +25,15 @@ router.post('/login', function (req, res, next) {
           const _token = jwt.sign({ name: _username }, secret, {
             expiresIn: config.Token.expires
           });
-          let user = new User({
-            token: _token
-          })
-          user.save((err, doc) => {
+          User.update({ token: _token }, (err, doc) => {
             if (err) {
-              logger.error(err);
-              return res.json({ code: 'error', data: null, message: 'TOKEN保存失败' })
+              logger.error(err)
+              return res.json({ code: 'error', data: {}, message: 'token插入数据库出错' })
             }
-            return res.json({ code: 'success', data: { token: _token, name: _username }, message: '验证通过' });
           })
+          return res.json({ code: 'success', data: { token: _token }, message: '验证通过' });
         }
-        return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
+        return res.json({ code: 'error', data: null, message: '密码错误' });
       });
     } else {
       return res.json({ code: 'error', data: null, message: '用户名或密码错误' });
@@ -80,11 +77,11 @@ router.post('/register', function (req, res, next) {
 router.post('/getUserByToken', function (req, res, next) {
   const _token = req.body.token;
   User.findOne({ token: _token }, function (err, doc) {
-    if(err){
+    if (err) {
       logger.error(err)
       return res.json({ code: 'error', data: null, message: '查询用户信息失败' });
     }
-    return res.json({ code: 'success', data: {dpc}, message: '查询成功' });
+    return res.json({ code: 'success', data: { doc }, message: '查询成功' });
   })
 
 });

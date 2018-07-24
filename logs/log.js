@@ -5,7 +5,7 @@ log4js.configure({
         default: { type: 'file', filename: 'VBlog.log', pattern: "_yyyy-MM-dd", maxLogSize: 1024 * 1024, backups: 1, alwaysIncludePattern: true }
     },
     categories: {
-        default: { appenders: ['out', 'default'], level: 'info' }
+        default: { appenders: ['out', 'default'], level: 'error' }
     }
 });
 
